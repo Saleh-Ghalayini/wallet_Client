@@ -1,0 +1,158 @@
+/* resetting CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #eef2f3;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    color: #154360;
+    max-width: 500px;
+    min-height: 620px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #59c076;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.input-area {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.input-area label {
+    display: block;
+    font-size: 1rem;
+    color: #154360;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.input-area input {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #154360;
+    transition: 0.3s ease-in-out;
+}
+
+.input-shadow:focus {
+    box-shadow: 0 0 8px rgba(47, 49, 50, 0.3);
+}
+
+/* putting the first and last name next to each other */
+.name {
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name .input-area {
+    flex: 1;
+    min-width: 150px;
+}
+
+.input-area input[type="radio"] {
+    width: auto;
+    outline: none;
+    margin-right: 5px;
+}
+
+.input-area {
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.input-area.gender label {
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+/* removing the arrows from the input of type number on different browsers*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.register {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-btn {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #60ce80;
+    transition: 0.3s ease-in-out;
+}
+
+.register-btn:hover {
+    background-color: #59c076;
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.input-area input::placeholder {
+    color: #154360;
+}
+
+/* making the form responsive */
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .input-area input {
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .register-btn {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}

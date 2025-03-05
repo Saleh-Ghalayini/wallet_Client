@@ -1,0 +1,37 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EasyPay | Login</title>
+        <link rel="icon" type="image/png" href="./assets/images/wallet-icon.png">
+        <link rel="stylesheet" href="./css/main.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="container">
+            <h1>EasyPay</h1>
+            <div class="input-area">
+                <input id="email_input" type="email" class="email" placeholder="email" required>
+                <i class="bx bxs-user icon"></i>
+            </div>
+            <div class="input-area">
+                <input id="password_input" type="password" class="password" placeholder="password" required>
+                <i class="bx bxs-lock-alt icon"></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" class="remember-me">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="btn-wrapper">
+                <button id="login" type="submit" class="login-btn">Log in</button>
+            <div class="register">
+                <p>Don't have an account? 
+                    <a href="register.html">Register Now</a>
+                </p>
+            </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/login.js"></script>
+</html>

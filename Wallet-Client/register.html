@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/images/wallet-icon.png">
+    <link rel="stylesheet" href="./css/register.css">
+    <title>EasyPay | Registration</title>
+</head>
+<body>
+    <div class="container">
+            <h1>Registration Form</h1>
+            <form class="form">
+                <div class="name">
+                    <div class="input-area">
+                        <input id="first-name" type="text" class="input-shadow" id="first-name" placeholder="First Name" required>
+                    </div>
+                    <div class="input-area">
+                        <input id="last-name" type="text" class="input-shadow" id="last-name" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="input-area gender">
+                    <label class="title">Gender:</label><br/>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male" class="gender-radio">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female" class="gender-radio">Female</label>
+                    <input id="gender" type="radio" id="other" name="gender" value="Other">
+                    <label for="other" class="gender-radio">Other</label>
+                </div>
+                <div class="input-area">
+                    <label class="title">Picture Of ID:</label>
+                    <input id="picture" type="file" accept=".png, .svg, .jpg, .jpeg, .webp" 
+                            class="input-shadow file-upload" required>
+                </div>
+                <div class="input-area">
+                    <label class="title">Date Of Birth:</label>
+                    <input id="date" type="date" class="input-shadow" required>
+                </div>
+                <div class="input-area">
+                    <input id="email" type="email" class="input-shadow" placeholder="Email" required>
+                </div>
+                <div class="input-area">
+                    <input id="phone-number" type="number" class="input-shadow" placeholder="+123456789" required>
+                </div>
+                <div class="input-area">
+                    <input id="password" type="password" class="input-shadow" placeholder="Password" required>
+                </div>
+                <div class="input-area">
+                    <input id="password-again" type="password" class="input-shadow" placeholder="Re-Enter Password"  required>
+                </div>
+                <div class="register">
+                    <button id="register-btn" type="submit" class="register-btn">Register</button>
+                </div>
+            </form>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./js/registration.js"></script>
+</html>

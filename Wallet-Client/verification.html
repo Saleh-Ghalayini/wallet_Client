@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/wallet-icon.png">
+    <link rel="stylesheet" href="./css/verificartion.css">
+    <title>EasyPay | Verification</title>
+</head>
+<body>
+    <div class="container">
+        <img src="./assets/images/icons8-email-30.png">
+        <p class="security-sentence">
+            To ensure the security, 
+            please complete the verification process by entering 
+            the code sent to your email.
+        </p>
+        <p class="email">Code sent to: </p>
+        <section>
+            <input id="code-field" type="number" required>
+            <p class="warning-sentence">wait two minutes before requesting another code</p>
+            <button id="verify-btn" class="verify">Verify</button>        
+        </section>
+        <div class="support">
+            <button class="code">Resend code</button>
+            <p>
+                <a href="#">Contact Support.</a>
+            </p>
+        </div>
+    </div>
+</body>
+<script src="./verification.js"></script>
+</html>
